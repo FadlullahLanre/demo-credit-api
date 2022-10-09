@@ -1,4 +1,7 @@
 // Update with your config settings.
+const dotenv = require('dotenv');
+dotenv.config({ path: './config.env' });
+const mysql = require('mysql')
 
 /**
  * @type { Object.<string, import("knex").Knex.Config> }
@@ -6,9 +9,18 @@
 module.exports = {
 
   development: {
-    client: 'sqlite3',
+    client: 'mysql',
     connection: {
-      filename: './dev.sqlite3'
+      host: process.env.MYSQL_DEV_HOST,
+      user: process.env.MYSQL_DEV_USER,
+      password : process.env.MYSQL_DEV_PASSWORD,
+      database: process.env.MYSQL_DEV_DATABASE,
+    },
+    migrations: {
+      directory: "./migrations"
+    },
+    seeds: {
+      directory: "./migrations/seeds"
     }
   },
 
