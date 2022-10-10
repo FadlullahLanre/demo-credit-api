@@ -1,6 +1,6 @@
 const db = require('../config/connect')
 const jwt = require('jsonwebtoken')
-const sigupValidator = require('../validator/signup')
+const sigupValidator = require('../validator/signUp')
 const AppError = require('../utils/appError')
 const loginValidator = require('../validator/login')
 const { promisify } = require('util')
