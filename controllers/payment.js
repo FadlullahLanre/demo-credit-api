@@ -1,5 +1,5 @@
 const AppError = require('../utils/appError')
-const { Account_statement } = require('../services/payment')
+const { Account_statement } = require('../services/paymentService')
 
 exports.Account_statement = async (req, res, next) => {
     try {

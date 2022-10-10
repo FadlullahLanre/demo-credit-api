@@ -1,4 +1,4 @@
-const db = require('../config/database')
+const db = require('../config/connect')
 const jwt = require('jsonwebtoken')
 const sigupValidator = require('../validator/signup')
 const AppError = require('../utils/appError')

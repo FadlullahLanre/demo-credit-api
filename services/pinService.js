@@ -1,7 +1,7 @@
 const AppError = require('../utils/appError')
 const bcrypt = require('bcrypt')
-const db = require('../config/database')
-const pinValidator = require('../validator/pin')
+const db = require('../config/connect')
+const pinValidator = require('../validator/userPin')
 
 
 const bankPin = async (user, value) => {

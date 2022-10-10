@@ -19,4 +19,4 @@ router.route('/transfer').post(protect, userController.transfer)
 router.route('/delete_allUser').delete(userController.deleteUser)
 
 router.get("/All", userController.AllUser)
-module.exports = routert
+module.exports = router

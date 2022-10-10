@@ -1,5 +1,5 @@
-const AppError = require('../utils/appError')
-const db = require('../config/database')
+const AppError = require('../utils/appError');
+const db = require('../config/connect');
 
 
 const Account_statement = async (value) => {

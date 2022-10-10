@@ -1,7 +1,7 @@
 const AppError = require('../utils/appError')
-const db = require('../config/database')
-const { deposit, withdrawal, transfer, GetAllUser, deleteAllUser } = require('../services/user')
-const { bankPin } = require('../services/pin')
+const db = require('../config/connect')
+const { deposit, withdrawal, transfer, GetAllUser, deleteAllUser } = require('../services/userService')
+const { bankPin } = require('../services/pinService')
 
 exports.getUser = async (req, res, next) => {
     try {
