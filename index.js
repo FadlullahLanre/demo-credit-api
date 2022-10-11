@@ -6,7 +6,7 @@ const xss = require('xss-clean');
 const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
 const userRouter = require('./routes/user');
-const paymentRouter = require('./routes/payment');
+const paymentRouter = require('./routes/transaction');
 const errorController = require('./utils/errorController');
 const app = express();
 dotenv.config();

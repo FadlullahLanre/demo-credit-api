@@ -8,15 +8,15 @@ const {
     protect
 } = require('../controllers/auth')
 
-router.post('/signup', signup)
-router.post('/login', login)
+router.post('/user/signup', signup)
+router.post('/user/login', login)
 
-router.route('/createPin').post(protect, userController.createPin)
-router.route('/profile').get(protect, userController.getUser)
-router.route('/deposit').post(protect, userController.deposit)
-router.route('/withdraw').post(protect, userController.withdraw)
-router.route('/transfer').post(protect, userController.transfer)
+router.route('/user/createPin').post(protect, userController.createPin)
+router.route('/user/profile').get(protect, userController.getUser)
+router.route('/wallet/deposit').post(protect, userController.deposit)
+router.route('/wallet/withdraw').post(protect, userController.withdraw)
+router.route('/wallet/transfer').post(protect, userController.transfer)
 router.route('/delete_allUser').delete(userController.deleteUser)
 
-router.get("/All", userController.AllUser)
+router.get("/user/All", userController.AllUser)
 module.exports = router
