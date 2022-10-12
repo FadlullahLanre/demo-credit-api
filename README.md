@@ -1,5 +1,6 @@
 # Demo-credit-api
 
+A wallet service api that allows a user to fund their account, transfer funds to another user's account and withdraw funds from their account.
 ### Tech Stack
 -NodeJS 
 
@@ -10,7 +11,7 @@
 ### Postman documentation
 https://documenter.getpostman.com/view/16044663/2s83zmMN4Q
 
-#Link to Api
+### Api
 https://fadlullah-lendsqr-be-test.herokuapp.com/v1/lendsqr/
 
 ### How to setup project
