@@ -35,7 +35,7 @@ app.use(xss());
 
 app.use('/v1/lendsqr', userRouter);
 app.use('/v1/lendsqr', paymentRouter);
-app.get('/', function (req, res) {
+app.get('/v1/lendsqr', function (req, res) {
 	res.send({ message : 'Welcome to the Demo Credit Api!, '});
   
   });

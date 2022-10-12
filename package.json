@@ -1,7 +1,7 @@
 {
   "name": "demo-credit-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "A wallet service api that allows a user to fund their account, transfer funds to another user's account and withdraw funds from their account.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
