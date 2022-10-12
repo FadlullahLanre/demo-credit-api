@@ -1,13 +1,19 @@
-# demo-credit-api
+# Demo-credit-api
 
+### Tech Stack
+-NodeJS 
+
+-KnexJS ORM
+
+-MySQL database
  
-#Link to postman documentation: 
+### Postman documentation
 https://documenter.getpostman.com/view/16044663/2s83zmMN4Q
 
 #Link to Api
 https://fadlullah-lendsqr-be-test.herokuapp.com/v1/lendsqr/
 
-### How to run
+### How to setup project
 - Clone the repo and open the folder using vscode or any other ide of choice
 - Run npm install in your terminal to install packages in package.json
 - Create a config.env file and fill in values for the following variables:
